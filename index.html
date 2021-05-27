@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Controls</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 100px;
+        background: red;
+        transition: all 0.6s;
+      }
+      .box.change {
+        background: yellow;
+        width: 400px;
+        height: 200px;
+      }
+      /* h1,
+      h2 {
+        position: fixed;
+        right: 100px;
+        top: 100px;
+        font-size: 40px;
+      } */
+      h2 {
+        top: 200px;
+      }
+      body {
+        height: 4000px;
+      }
+      .to-top {
+        position: fixed;
+        bottom: 50px;
+        right: 100px;
+        display: none;
+        padding: 20px;
+        font-size: 18px;
+        font-weight: bold;
+        background: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Click</button>
+    <div class="box"></div>
+
+    <p></p>
+
+    <h1>00</h1>
+    <h2>00</h2>
+
+    <span class="to-top"> Top </span>
+
+    <div class="movies"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+      integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+      crossorigin="anonymous"
+    ></script>
+    <script src="ajax.js"></script>
+  </body>
+</html>
